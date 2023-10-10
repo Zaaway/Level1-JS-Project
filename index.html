@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Breaker</title>
+    <script src="script.js" async></script>
 </head>
 <body onload = "generateCode()">
     <h1>Code Breaker</h1>
@@ -16,9 +17,10 @@
     </p>
     <form id="myForm">
         <label for="guess">Guess the code --></label>
-        <input type="text" id="guess" name="guess"><br><br>
+        <input type="number" id="guess" name="guess" min="1" max="999"><br><br>
         <button type="submit">Guess</button>
     </form>
-    
+    <p id="guessCount">You have 7 guesses left</p>
+    <p id="response"></p>
 </body>
 </html>
